@@ -3,7 +3,7 @@
 на курсе Web-разработчик от Яндекс.Практикум
 
 ## GitHub Pages 
-https://sergeymihaylov-github.github.io/mesto/
+https://sergeymihaylov-github.github.io/Mesto/
 
 ## Инструмент
 * HTML

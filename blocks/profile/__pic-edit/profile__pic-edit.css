@@ -1,0 +1,28 @@
+.profile__pic-edit{
+  margin: 0px;
+  margin-top: 77px;
+  width: 24px;
+  height: 24px;
+  background-color: black;
+  border: 1px solid white;
+  background-image: url(../../../image/Edit_Button.svg);
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.profile__pic-edit:hover{
+  cursor: pointer;
+  opacity: 0.4;
+}
+
+@media screen and (max-width: 930px){
+  .profile__pic-edit{
+    width: 18px;
+    height: 18px;
+    margin: 13px 0px 0px 10px;
+    align-self: center;
+  }
+}

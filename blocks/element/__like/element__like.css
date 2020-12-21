@@ -1,16 +1,17 @@
 .element__like{
-  width: 21px;
-  height: 19px;
+  width: 20.76px;
+  height: 18.13px;
   margin: 6px 7.24px 1.13px 0px;
-  background-color: #ffffff;
-  border: 0;
-  background-image: url(../../../image/like.svg);
+  background-color: white;
+  border: 0px;
+  background-image: url(../../../image/Like.svg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   outline: none;
-  cursor: pointer;
 }
+
 .element__like:hover{
-  opacity: 0.5;
+  opacity: 0.4;
+  cursor: pointer;
 }

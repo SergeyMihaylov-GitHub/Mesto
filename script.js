@@ -1,32 +1,36 @@
-let blockPopup = document.querySelector('.popup');
-let nameFromPage = document.querySelector('.profile__name');
-let jobFromPage = document.querySelector('.profile__profession');
-let nameFromForm = document.querySelector('.popup__input_name');
-let jobFromForm = document.querySelector('.popup__input_work');
-let openBlockPopup = document.querySelector('.profile__pic-edit');
-let closeBlockPopup = blockPopup.querySelector('.popup__close');
+let popup = document.querySelector('.popup');
+
+let openPopup = document.querySelector('.profile__button-edit');
+let openClose = document.querySelector('.popup__submit-close');
+
+let profileTitle = document.querySelector('.profile__ititle');
+let profileSubtitle = document.querySelector('.profile__subtitle');
+
+let popupTitle = document.querySelector('.popup__field_name');
+let popupSubtitle = document.querySelector('.popup__field_subname');
+
+let popupSave = document.querySelector('.popup__form');
 
 
-function togglePopup(){
-  blockPopup.classList.toggle('popup_opened');
-  nameFromForm.value = nameFromPage.textContent;
-  jobFromForm.value = jobFromPage.textContent;
-}
+function offClick(){
+    popup.classList.remove('popup_opened');
+};
 
-function savePopup (event){
-  event.preventDefault();
-  nameFromPage.textContent = nameFromForm.value;
-  jobFromPage.textContent = jobFromForm.value;
-  closePopup();
-}
+function onClick(){
+    popup.classList.add('popup_opened');
+    popupTitle.value = profileTitle.textContent;
+    popupSubtitle.value = profileSubtitle.textContent;
+};
 
-function closePopup(){
-  blockPopup.classList.remove('popup_opened');
-}
+function reName(evt){
+    evt.preventDefault();
+    profileTitle.textContent = popupTitle.value;
+    profileSubtitle.textContent = popupSubtitle.value;
+    offClick();
+};
 
-openBlockPopup.addEventListener('click', togglePopup);
+openClose.addEventListener('click', offClick);
 
-blockPopup.addEventListener('submit', savePopup);
+openPopup.addEventListener('click', onClick);
 
-closeBlockPopup.addEventListener('click', togglePopup);
-
+popupSave.addEventListener('submit', reName);

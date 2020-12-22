@@ -1,0 +1,32 @@
+.popup__submit-close{
+    top: -41px;
+    left: 422px;
+    display: flex;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background-image: url('../../../../images/close_icon.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: transparent;
+    border: none;
+    overflow: hidden;
+    outline: none;
+}
+
+.popup__submit-close:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 480px){
+    .popup__submit-close {
+        top: -41px;
+        left: 254px;
+    }
+
+    .popup__submit-close:hover{
+        opacity: 0.8;
+        cursor: pointer;
+    }
+}

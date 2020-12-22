@@ -2,7 +2,12 @@
     min-width: 299px;
     max-width: 1200px;
     margin: 0px auto;
-    text-rendering: optimizeLegibility;
     font-family: 'Inter', Arial, sans-serif;
     background-color: black;
+    text-rendering: optimizeLegibility;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
 }

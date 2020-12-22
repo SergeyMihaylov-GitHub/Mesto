@@ -1,10 +1,10 @@
 let popup = document.querySelector('.popup');
 
-let openPopup = document.querySelector('.profile__button-edit');
+let openPopup = document.querySelector('.profile__edit');
 let openClose = document.querySelector('.popup__submit-close');
 
-let profileTitle = document.querySelector('.profile__ititle');
-let profileSubtitle = document.querySelector('.profile__subtitle');
+let profileTitle = document.querySelector('.profile__name');
+let profileSubtitle = document.querySelector('.profile__profession');
 
 let popupTitle = document.querySelector('.popup__field_name');
 let popupSubtitle = document.querySelector('.popup__field_subname');

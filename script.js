@@ -3,11 +3,11 @@ let popup = document.querySelector('.popup');
 let openPopup = document.querySelector('.profile__edit');
 let openClose = document.querySelector('.popup__button-close');
 
-let profileTitle = document.querySelector('.profile__name');
-let profileSubtitle = document.querySelector('.profile__profession');
+let profileName = document.querySelector('.profile__name');
+let profileProfession = document.querySelector('.profile__profession');
 
-let popupTitle = document.querySelector('.popup__field_name');
-let popupSubtitle = document.querySelector('.popup__field_subname');
+let popupName = document.querySelector('.popup__field_type_name');
+let popupProfession = document.querySelector('.popup__field_type_profession');
 
 let popupSave = document.querySelector('.popup__form');
 
@@ -18,14 +18,14 @@ function offClick(){
 
 function onClick(){
     popup.classList.add('popup_opened');
-    popupTitle.value = profileTitle.textContent;
-    popupSubtitle.value = profileSubtitle.textContent;
+    popupName.value = profileName.textContent;
+    popupProfession.value = profileProfession.textContent;
 };
 
 function reName(evt){
     evt.preventDefault();
-    profileTitle.textContent = popupTitle.value;
-    profileSubtitle.textContent = popupSubtitle.value;
+    profilNameTitle.textContent = popupName.value;
+    profileProfession.textContent = popupProfession.value;
     offClick();
 };
 

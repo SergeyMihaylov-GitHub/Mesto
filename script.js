@@ -1,7 +1,7 @@
 let popup = document.querySelector('.popup');
 
 let openPopup = document.querySelector('.profile__edit');
-let openClose = document.querySelector('.popup__submit-close');
+let openClose = document.querySelector('.popup__button-close');
 
 let profileTitle = document.querySelector('.profile__name');
 let profileSubtitle = document.querySelector('.profile__profession');

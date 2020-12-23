@@ -1,11 +1,11 @@
-.popup__submit-close{
+.popup__button-close{
     top: -41px;
     left: 422px;
     display: flex;
     position: relative;
     width: 40px;
     height: 40px;
-    background-image: url('../../../../image/Close_Icon_Popup_Profile.svg');
+    background-image: url('../../../image/Close_Icon_Popup_Profile.svg');
     background-repeat: no-repeat;
     background-size: contain;
     background-color: transparent;
@@ -14,18 +14,18 @@
     outline: none;
 }
 
-.popup__submit-close:hover{
+.popup__button-close:hover{
     opacity: 0.8;
     cursor: pointer;
 }
 
 @media screen and (max-width: 480px){
-    .popup__submit-close {
+    .popup__button-close {
         top: -41px;
         left: 254px;
     }
 
-    .popup__submit-close:hover{
+    .popup__button-close:hover{
         opacity: 0.8;
         cursor: pointer;
     }

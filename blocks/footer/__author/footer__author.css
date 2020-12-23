@@ -13,5 +13,7 @@
     .footer__author{
         max-width: 282px;
         width: 100%;
+        font-size: 14px;
+        line-height: 17px;
     }
 }

@@ -18,5 +18,6 @@
 }
 
 .elements__like:active{
-    background-color: black;
+    background-image: url(../../../image/Like-active.svg);
+    opacity: 1;
 }

@@ -24,7 +24,7 @@ function onClick(){
 
 function reName(evt){
     evt.preventDefault();
-    profilName.textContent = popupName.value;
+    profileName.textContent = popupName.value;
     profileProfession.textContent = popupProfession.value;
     offClick();
 };
